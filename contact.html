@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #1b4f72;
+            color: #fff;
+            padding: 10px 0; /* Adjusted padding */
+            text-align: center;
+            display: flex;
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+        }
+
+        #logo {
+            width: 150px; /* Adjusted width */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 10px;
+        }
+
+        nav {
+            background-color: #154360;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1; /* Grow to fill remaining space */
+            position: relative;
+            overflow: hidden;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        #content {
+            width: 60%;
+            border: 1px solid #dddddd00;
+            padding: 30px;
+            margin-bottom: 100px; /* Adjusted margin to accommodate the footer height */
+            background-color: #ffffffa7;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            border-radius: 10px;
+        }
+
+        #content a {
+            text-decoration: none;
+        }
+
+        #content button {
+            background-color: #022e4c;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #content button:hover {
+            background-color: #002136;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px; /* Added margin-top to create space */
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-links a {
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .social-links i {
+            font-size: 30px;
+            color: #002842;
+            transition: color 0.3s ease;
+        }
+
+        .social-links i:hover {
+            color: #002c4a;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        footer a {
+            color: #fff; 
+        }
+    </style>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="picture/logo.png" alt="UMS Logo">
+        <h1>UMSKAL Beach Campus</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <video autoplay loop muted>
+            <source src="video/video3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <section id="content">
+            <h2>How to contact?</h2>
+            <p>For any inquiries, please contact us through the following details:</p>
+            <address>
+                <strong>Address:</strong> <a href="https://www.google.com/maps/place/Universiti+Malaysia+Sabah+Kampus+Antarabangsa+Labuan/@5.2807226,115.1723982,15.48z/data=!4m20!1m13!4m12!1m4!2m2!1d115.2481957!2d5.2908004!4e1!1m6!1m2!1s0x32231b6feee7da7b:0xec7c29d3413d654e!2sums+kal+google+map!2m2!1d115.1736251!2d5.2787982!3m5!1s0x32231b6feee7da7b:0xec7c29d3413d654e!8m2!3d5.2787982!4d115.1736251!16s%2Fg%2F11lh6dl9yr?entry=ttu">Menara UMS Kampus Antarabangsa Labuan, 87000 Labuan, Wilayah Persekutuan Labuan</a>
+            </address>
+            <p><strong>Email:</strong> <a href="mailto:adminkal@ums.edu.my">adminkal@ums.edu.my</a></p>
+            <p><strong>Phone:</strong> +60 88-320000</p>
+            <p><strong>Fax:</strong> +60 88-320001</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/umskal.official/" target="_blank">
+                    <i class="fab fa-instagram" style="color: #a51746;"></i>
+                </a>
+                <a href="https://www.facebook.com/p/UMSKAL-100063594940384/" target="_blank">
+                    <i class="fab fa-facebook" style="color: #07456e;"></i>
+                </a>
+                <a href="https://twitter.com/umskal_official" target="_blank">
+                    <i class="fab fa-twitter" style="color: #2a75a7;"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=6088320000" target="_blank">
+                    <i class="fab fa-whatsapp" style="color: #065c3e;"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCkriQ1ronfQofaoVH1qYk8A" target="_blank">
+                    <i class="fab fa-youtube" style="color: #f31c1c;"></i>
+                </a>
+                <a href="https://t.me/ums4all" target="_blank">
+                    <i class="fab fa-telegram" style="color: #3498db;"></i>
+                </a>
+                <a href="https://www.linkedin.com/school/umsofficial/" target="_blank">
+                    <i class="fab fa-linkedin" style="color: #184766;"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 UMSKAL Beach Campus. All rights reserved.</p>
+        <p>
+            <a href="https://www.ums.edu.my/v5/en/home/term-of-use" target="_blank">TERM OF USE</a> |
+            <a href="https://www.ums.edu.my/v5/en/home/disclaimer" target="_blank">DISCLAIMER</a> |
+            <a href="https://www.ums.edu.my/v5/en/home/privacy-policy" target="_blank">PRIVACY POLICY</a> |
+            <a href="https://www.ums.edu.my/v5/en/home/security-policy" target="_blank">SECURITY POLICY</a> |
+            <a href="https://www.ums.edu.my/v5/en/home/copyright-policy" target="_blank">COPYRIGHT POLICY</a>
+        </p>
+    </footer>
+</body>
+</html>

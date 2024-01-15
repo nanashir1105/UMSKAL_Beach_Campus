@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Set minimum height to 100% of viewport height */
+        }
+
+        header {
+            background-color: #1b4f72;
+            color: #fff;
+            padding: 10px 0; /* Adjusted padding */
+            text-align: center;
+            display: flex;
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+        }
+
+        #logo {
+            width: 150px; /* Adjusted width */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 10px;
+        }
+
+        nav {
+            background-color: #154360;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1; /* Grow to fill remaining space */
+            position: relative;
+            overflow: hidden;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        #content, #side-content, #quick-links {
+            width: 90%; /* Adjusted width */
+            max-width: 600px; /* Added max-width */
+            border: none; /* Remove the border */
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #ffffffbc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            position: relative;
+            border-radius: 20px; /* Added border-radius for rounded corners */
+        }
+
+        #side-content a, #quick-links a {
+            text-decoration: none;
+        }
+
+        #side-content button, #quick-links button {
+            background-color: transparent; /* Set background color to transparent */
+            color: #000000;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 50%; /* Set border-radius to 50% for a circular shape */
+            border: 2px solid #00c9f761; /* Add border to the button */
+        }
+
+        #side-content button:hover, #quick-links button:hover {
+            background-color: #58ccbe;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        footer a {
+            color: #fff; /* Set links color to white */
+        }
+    </style>
+    
+    <title>UMSKAL Beach Campus</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="picture/logo.png" alt="UMS Logo">
+        <h1>UMSKAL Beach Campus</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <video autoplay loop muted>
+            <source src="video/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <section id="content">
+            <h2>Welcome to UMSKAL Beach Campus</h2>
+            <p>Explore the beauty of our beach campus and the opportunities it offers.</p>
+        </section>
+        <aside id="side-content">
+            <h2>News & Updates</h2>
+            <p>Stay tuned for the latest happenings and announcements at UMSKAL Beach Campus.</p>
+            <a href="https://www.ums.edu.my/v5/statistic-of-online-services/39-news-events/news"><button>UMSKAL News & Updates</button></a>
+        </aside>
+        <aside id="quick-links">
+            <h2>Quick Links</h2>
+            <a href="https://registrar.ums.edu.my/directory/web/public/index"><button>Staff Directory</button></a>
+            <a href="https://expertise.ums.edu.my/home"><button>Expertise Directory</button></a>
+            <a href="https://registrar.ums.edu.my/staff/web/site/login"><button>Staff Portal</button></a>
+            <a href="https://www.ums.edu.my/v5/en/uncategorised/9658-student-page-2"><button>Student Portal</button></a>
+            <a href="https://itel.ums.edu.my/login/index.php"><button>Itel UMS</button></a>
+            <a href="https://eoffice.ums.edu.my/e-respon/"><button>E-Respon</button></a>
+            <a href="https://smp.ums.edu.my/"><button>SMPB</button></a>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 UMSKAL Beach Campus. All rights reserved.</p>
+        <p>
+            <a href="https://www.ums.edu.my/v5/en/home/copyright-policy" target="_blank">TERM OF USE</a> |
+            <a href="https://www.ums.edu.my/v5/en/home/copyright-policy" target="_blank">DISCLAIMER</a> |
+            <a href="https://www.ums.edu.my/v5/en/home/copyright-policy" target="_blank">PRIVACY POLICY</a> |
+            <a href="https://www.ums.edu.my/v5/en/home/copyright-policy" target="_blank">SECURITY POLICY</a> |
+            <a href="https://www.ums.edu.my/v5/en/home/copyright-policy">COPYRIGHT POLICY</a>
+        </p>
+    </footer>
+    <script>
+        // JavaScript specific to index.html
+        console.log("JavaScript is linked for the index page!");
+    </script>
+</body>
+</html>

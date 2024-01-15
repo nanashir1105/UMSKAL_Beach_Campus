@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Set minimum height to 100% of viewport height */
+            background-image: url('picture/academicsbg.png');
+            background-size: cover;
+            animation: backgroundAnimation 5s linear infinite; /* Background animation */
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 100% 1%; }
+        }
+
+        header {
+            background-color: #1b4f72;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #logo {
+            width: 150px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        nav {
+            background-color: #154360;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            position: relative;
+        }
+
+        .academic-section {
+            margin-top: 20px;
+        }
+
+        .academic-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .academic-item {
+            width: 30%;
+            padding: 20px;
+            margin: 10px;
+            background-color: #f8f9facc;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .academic-item h3 {
+            color: #00336a;
+        }
+
+        .academic-item a {
+            display: block;
+            background-color: #02274e;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .academic-item a:hover {
+            background-color: #307ccd;
+        }
+
+        .options-btn {
+            background-color: #00244a;
+            color: #fff;
+            padding: 15px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .options-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .options {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .option-link {
+            display: block;
+            color: #007bff;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .option-link:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .options-img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            z-index: 2;
+        }
+    </style>
+    <title>UMS Academic</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="picture/logo.png" alt="UMS Logo">
+        <h1>UMSKAL Beach Campus</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Academic Programs</h2>
+        <div class="academic-section">
+            <div class="academic-content">
+                <div class="academic-item">
+                    <h3>Undergraduate Programs</h3>
+                    <p>Explore our undergraduate programs and kick-start your academic journey.</p>
+                    <a href="https://www.ums.edu.my/v5/en/admission-to-ums/programmes-offered">Explore Programs</a>
+                </div>
+                <div class="academic-item">
+                    <h3>Postgraduate Programs</h3>
+                    <p>Pursue advanced studies with our diverse range of postgraduate programs.</p>
+                    <a href="https://www.ums.edu.my/ppps/index.php/what-we-offer/program-offered">Explore Programs</a>
+                </div>
+                <div class="academic-item">
+                    <h3>Research & Innovation Opportunities</h3>
+                    <div class="options-btn" onclick="toggleOptions()">Explore Options</div>
+                    <div class="options" id="options">
+                        <a href="https://www.ums.edu.my/v5/en/uncategorised/9663-research-institute" class="option-link">
+                            Research Institute
+                            <img src="picture/institute.jpg" alt="Research Institute Image" class="options-img">
+                        </a>
+                        <a href="https://www.ums.edu.my/v5/en/information/12201-research-centre-and-unit" class="option-link">
+                            Research Centre & Unit
+                            <img src="picture/centre.jpg" alt="Research Centre & Unit Image" class="options-img">
+                        </a>
+                        <a href="https://www.ums.edu.my/v5/en/information/9571-achievement" class="option-link">
+                            Research Achievement
+                            <img src="picture/achievements.jpg" alt="Research Achievement Image" class="options-img">
+                        </a>
+                        <a href="https://www.ums.edu.my/v5/en/information/9661-research-facilities-3" class="option-link">
+                            Research Facilities
+                            <img src="picture/facilities.jpg" alt="Research Facilities Image" class="options-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Universiti Malaysia Sabah. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleOptions() {
+            var optionsDiv = document.getElementById("options");
+            optionsDiv.style.display = (optionsDiv.style.display === "none" || optionsDiv.style.display === "") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
